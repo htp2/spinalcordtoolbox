@@ -101,6 +101,9 @@ def main(args=None):
                        'https://www.neuro.polymtl.ca/_media/downloads/sct/20170922_pmj_models.zip'],
         'binaries_linux': ['https://osf.io/tqver/?action=download',
                             'TODO'],
+        # we are temporarily supporting old centos6 for large, slowly-updating compute clusters.
+        # these binaries are *out of date* and do not have the latest algorithms or optimizations.
+        # TODO: drop support when centos6 EOLs
         'binaries_centos6': ['https://osf.io/8kpt4/?action=download',
                             'https://www.neuro.polymtl.ca/_media/downloads/sct/20190930_sct_binaries_linux_centos6.tar.gz'],
         'binaries_osx': ['https://osf.io/z4e23/?action=download',
