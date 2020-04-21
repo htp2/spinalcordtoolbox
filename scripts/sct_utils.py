@@ -235,10 +235,11 @@ def which_sct_binaries():
     """
 
     if sys.platform.startswith("linux"):
-        distro = platform.linux_distribution()
-        if "CentOS Linux" in distro:
-            return "binaries_centos6"
-        if "Red Hat Enterprise Linux Server" in distro:
+        distname, version, id = platform.linux_distribution()
+        if distro in ["CentOS", "Red Hat Enterprise Linux Server"] and "6" in version:
+            # we are temporarily supporting old centos6 for large, slowly-updating compute clusters.
+            # these binaries are *out of date* and do not have the latest algorithms or optimizations.
+            # TODO: drop support when centos6 EOLs
             return "binaries_centos6"
         return "binaries_linux"
     else:
