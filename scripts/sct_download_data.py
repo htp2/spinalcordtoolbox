@@ -99,14 +99,14 @@ def main(args=None):
                          'https://www.neuro.polymtl.ca/_media/downloads/sct/20170413_optic_models.zip'],
         'pmj_models': ['https://osf.io/4gufr/?action=download',
                        'https://www.neuro.polymtl.ca/_media/downloads/sct/20170922_pmj_models.zip'],
-        'binaries_linux': ['https://osf.io/admxy/?action=download',
+        'binaries_linux': ['https://osf.io/xhr4v/?action=download',
                             'TODO'],
         # we are temporarily supporting old centos6 for large, slowly-updating compute clusters.
         # these binaries are *out of date* and do not have the latest algorithms or optimizations.
         # TODO: drop support when centos6 EOLs
         'binaries_centos6': ['https://osf.io/8kpt4/?action=download',
                             'https://www.neuro.polymtl.ca/_media/downloads/sct/20190930_sct_binaries_linux_centos6.tar.gz'],
-        'binaries_osx': ['https://osf.io/7vx5g/?action=download',
+        'binaries_osx': ['https://osf.io/eg2m5/?action=download',
                          'TODO'],
         'course_hawaii17': 'https://osf.io/6exht/?action=download',
         'course_paris18': ['https://osf.io/9bmn5/?action=download',
