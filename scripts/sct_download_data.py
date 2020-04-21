@@ -51,7 +51,6 @@ def get_parser():
             'optic_models',
             'pmj_models',
             'binaries_linux',
-            'binaries_centos6',
             'binaries_osx',
             'deepseg_gm_models',
             'deepseg_sc_models',
